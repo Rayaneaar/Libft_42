@@ -18,6 +18,7 @@ char *ft_strchr(const char *str, int c);
 void *ft_memset(void *ptr , int value , size_t bytes);
 size_t ft_strlen(const char *str);
 int ft_strncmp(const char *s1 , const char *s2 , size_t n);
+void ft_bzero(void *s , size_t n);
 
 
 
