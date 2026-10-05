@@ -2,27 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 
+void	*ft_memmove(void *dest, const void *src, size_t len);
+
 int	main(void)
 {
-	unsigned char	buf[10];
+	char	name[] = "hello world";
 
-	// Step 1: fill everything with a non-zero marker so you can
-	// tell "zeroed" apart from "was already zero"
-	ft_memset(buf, 0xFF, sizeof(buf));
-	printf("Before: ");
-	for (int i = 0; i < 10; i++)
-		printf("%02X ", buf[i]);
-	printf("\n");
-	// Step 2: call the function you're testing
-	ft_bzero(buf, 4);
-	printf("After dyalna:  ");
-	for (int i = 0; i < 10; i++)
-		printf("%02X ", buf[i]);
-	printf("\n");
-	bzero(buf, 5);
-	printf("After dyalhom:  ");
-	for (int i = 0; i < 10; i++)
-		printf("%02X ", buf[i]);
-	printf("\n");
+	ft_memmove(name + 4, name, 5);
+	printf("%s\n", (char *)name);
 	return (0);
 }
