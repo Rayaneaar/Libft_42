@@ -2,32 +2,27 @@ NAME = libft.a
 
 GCC = gcc
 
-SRC = $(wildcard ./src/*.c)
+SRC = $(wildcard src/*.c)
 
 OBJ = $(SRC:%.c=%.o)
 
-HEADER_PATH = ./include/
 
-CC_FLAGS = -Wall -Wextra -Werror -I$(HEADER_PATH)
+CC_FLAGS = -Wall -Wextra -Werror 
 
 all : $(NAME)
 
 $(NAME) : $(OBJ)
 	ar crs $(NAME) $(OBJ)
-	rm -f ./src/*.o
+%.o : %.c libft.h
 
-%.o : %.c
 	$(GCC) $(CC_FLAGS) -c $< -o $@ 
 
 clean :
-	rm -f ./src/*.o
+	rm -f *.o
 
 fclean:
-	rm -f ./src/*.o *.a
+	rm -f *.o *.a
 
-test : $(NAME)
-	gcc ./testing/main.c $(CC_FLAGS) $(NAME)
-	./a.out
 
 .PHONY : clean fclean
 
