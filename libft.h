@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
-// TO REMOVE LATER
 #include <string.h>
 #include <stdlib.h>
-// ================
+
 #ifndef LIBFT_H
 
 #define LIBFT_H

@@ -17,7 +17,7 @@ unsigned int	ft_lstsize(t_list *lst)
 	unsigned int	i;
 
 	if (!lst)
-		return (NULL);
+		return (0);
 	i = 0;
 	while (lst != NULL)
 	{

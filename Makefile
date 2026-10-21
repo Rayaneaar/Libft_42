@@ -2,7 +2,7 @@ NAME = libft.a
 
 GCC = gcc
 
-SRC = $(wildcard src/*.c)
+SRC = $(wildcard *.c)
 
 OBJ = $(SRC:%.c=%.o)
 
