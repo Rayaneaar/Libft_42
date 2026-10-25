@@ -28,11 +28,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, size);
 	return (ptr);
 }
-int	main(void)
-{
-	char	*str;
-
-	str = malloc(0);
-	if (!str)
-		printf("sa3dani");
-}

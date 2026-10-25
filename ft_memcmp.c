@@ -33,8 +33,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		return (0);
 	return (0);
 }
-int	main(void)
-{
-	// printf("test => %d\n", ft_memcmp("aziz", "aziz", -1));
-	printf("test => %d\n", memcmp("aziz", "aziz", -1));
-}
