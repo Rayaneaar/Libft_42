@@ -23,9 +23,6 @@ all : $(NAME)
 
 $(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-so: fclean
-	$(MAKE) CFLAGS="$(CFLAGS) -fPIC" $(OBJS)
-	$(CC) -shared -o libft.so $(OBJS)
 
 %.o : %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
