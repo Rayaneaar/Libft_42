@@ -21,13 +21,11 @@ OBJS = $(SRCS:.c=.o)
 
 all : $(NAME)
 
-so:
-	$(CC) -fPIC $(CFLAGS) $(SRCS)
-	gcc -shared -o libft.so $(OBJS)
-
 $(NAME) : $(OBJS)
-	ar crs $(NAME) $(OBJ)
-
+	ar rcs $(NAME) $(OBJS)
+so: fclean
+	$(MAKE) CFLAGS="$(CFLAGS) -fPIC" $(OBJS)
+	$(CC) -shared -o libft.so $(OBJS)
 
 %.o : %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@

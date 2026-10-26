@@ -5,24 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: raaribou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/21 12:35:31 by raaribou          #+#    #+#             */
-/*   Updated: 2026/10/21 12:55:59 by raaribou         ###   ########.fr       */
+/*   Created: 2026/10/26 11:03:26 by raaribou          #+#    #+#             */
+/*   Updated: 2026/10/26 11:07:11 by raaribou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
+#include <stddef.h>
 
 unsigned int	ft_lstsize(t_list *lst)
 {
-	unsigned int	i;
+	size_t	len;
 
+	len = 0;
 	if (!lst)
 		return (0);
-	i = 0;
-	while (lst != NULL)
+	while (lst)
 	{
-		i++;
 		lst = lst->next;
+		len++;
 	}
-	return (i);
+	return (len);
 }

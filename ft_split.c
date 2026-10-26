@@ -64,7 +64,7 @@ static char	*ft_get_word(char const *s, size_t *i, char c)
 	return (ft_substr(s, start, len));
 }
 
-char	**ft_split(char *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**arr;
 	size_t	i;
@@ -73,9 +73,9 @@ char	**ft_split(char *s, char c)
 
 	i = 0;
 	index = 0;
-	words = ft_count_words(s, c);
 	if (!s)
 		return (NULL);
+	words = ft_count_words((char *)s, c);
 	arr = malloc(sizeof(char *) * (words + 1));
 	if (!arr)
 		return (NULL);

@@ -13,19 +13,16 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t			i;
-	unsigned char	*haystack;
-	unsigned char	*last;
+	size_t	i;
 
-	i = 0;
-	last = NULL;
-	haystack = (unsigned char *)s;
-	while (haystack[i])
+	i = ft_strlen(s);
+	while (i > 0)
 	{
-		if (haystack[i] == c)
-			last = &haystack[i];
-		i++;
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		i--;
 	}
-	last = &haystack[i];
-	return ((char *)last);
+	if (s[i] == (char)c)
+		return ((char *)&s[i]);
+	return (NULL);
 }

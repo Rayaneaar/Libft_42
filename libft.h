@@ -4,7 +4,6 @@
 #include <unistd.h>
 
 #ifndef LIBFT_H
-
 #define LIBFT_H
 
 typedef struct s_list {

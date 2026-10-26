@@ -5,15 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: raaribou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/21 11:18:02 by raaribou          #+#    #+#             */
-/*   Updated: 2026/10/21 11:27:29 by raaribou         ###   ########.fr       */
+/*   Created: 2026/10/26 09:58:54 by raaribou          #+#    #+#             */
+/*   Updated: 2026/10/26 10:28:31 by raaribou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!lst || !new)
+		return ;
 	new->next = *lst;
 	*lst = new;
 }

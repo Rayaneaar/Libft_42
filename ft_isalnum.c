@@ -14,6 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	return ((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A') || (c <= 'Z'
-			&& c >= 'A'));
+	if (ft_isdigit(c) || ft_isalpha(c))
+		return (1);
+	return (0);
 }

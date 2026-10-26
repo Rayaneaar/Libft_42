@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: raaribou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/22 10:13:22 by raaribou          #+#    #+#             */
-/*   Updated: 2026/10/22 10:48:49 by raaribou         ###   ########.fr       */
+/*   Created: 2026/10/26 11:57:57 by raaribou          #+#    #+#             */
+/*   Updated: 2026/10/26 12:09:57 by raaribou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list	*tmp;
+	t_list	*tmp_node;
 
-	if (!lst || !(*lst) || !del)
+	if (!lst || !*lst || !del)
 		return ;
 	while (*lst)
 	{
-		tmp = (*lst)->next;
+		tmp_node = (*lst)->next;
 		ft_lstdelone(*lst, del);
-		*lst = tmp;
+		*lst = tmp_node;
 	}
 	*lst = NULL;
 }
