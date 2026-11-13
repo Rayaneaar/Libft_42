@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raaribou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raaribou <raaribou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 11:08:41 by raaribou          #+#    #+#             */
-/*   Updated: 2026/10/20 11:21:01 by raaribou         ###   ########.fr       */
+/*   Created: 2026/10/28 18:38:28 by raaribou          #+#    #+#             */
+/*   Updated: 2026/10/28 18:39:17 by raaribou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	size_t	i;
 
 	i = 0;
-	if (!s)
+	if (!s || !f)
 		return ;
 	while (s[i])
 	{

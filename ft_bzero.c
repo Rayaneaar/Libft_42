@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raaribou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raaribou <raaribou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/16 23:17:16 by raaribou          #+#    #+#             */
-/*   Updated: 2026/10/16 23:19:07 by raaribou         ###   ########.fr       */
+/*   Created: 2026/10/28 18:34:18 by raaribou          #+#    #+#             */
+/*   Updated: 2026/10/28 18:35:10 by raaribou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raaribou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raaribou <raaribou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/19 21:41:33 by raaribou          #+#    #+#             */
-/*   Updated: 2026/10/26 21:41:45 by raaribou         ###   ########.fr       */
+/*   Created: 2026/10/28 18:40:29 by raaribou          #+#    #+#             */
+/*   Updated: 2026/10/28 18:40:58 by raaribou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <unistd.h>

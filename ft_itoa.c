@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raaribou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raaribou <raaribou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 08:21:04 by raaribou          #+#    #+#             */
-/*   Updated: 2026/10/20 09:16:47 by raaribou         ###   ########.fr       */
+/*   Created: 2026/10/28 18:35:15 by raaribou          #+#    #+#             */
+/*   Updated: 2026/10/28 18:35:55 by raaribou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	ft_get_len(int n)
 
 	len = 1;
 	nbr = n;
-	while (nbr < 0)
+	if (nbr < 0)
 	{
 		len++;
 		nbr *= -1;

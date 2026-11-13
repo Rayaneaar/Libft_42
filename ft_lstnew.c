@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raaribou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raaribou <raaribou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/26 09:10:07 by raaribou          #+#    #+#             */
-/*   Updated: 2026/10/26 10:27:20 by raaribou         ###   ########.fr       */
+/*   Created: 2026/10/28 18:36:31 by raaribou          #+#    #+#             */
+/*   Updated: 2026/10/28 18:37:00 by raaribou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 t_list	*ft_lstnew(void *content)
